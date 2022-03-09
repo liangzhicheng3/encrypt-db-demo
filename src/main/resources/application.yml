@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: encrypt-db-demo
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test_db?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: ENC(Sb86SiORO0l/XPGcPXivEA==)
+    password: ENC(xQIOXWygmrbsMVNCFAZrhQ==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis-plus:
+  check-config-location: true
+  configuration:
+    map-underscore-to-camel-case: true
